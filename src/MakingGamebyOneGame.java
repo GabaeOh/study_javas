@@ -8,6 +8,7 @@ public class MakingGamebyOneGame {
         A = C;  //212
         C = B; // 201
         B = D;
+        
         System.out.println( A);
         System.out.println( B);
         System.out.println( C);
