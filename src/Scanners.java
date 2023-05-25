@@ -2,7 +2,7 @@
 import java.util.Scanner; // class 밖에서 선언
 public class Scanners {
     public static void main(String[] args) {
-        @SuppressWarnings("resource") // 사용된 Scanner 위에서 추가 해야지 clode가 됨
+        @SuppressWarnings("resource") // 사용된 Scanner 위에서 추가 해야지 close가 됨
         Scanner myObj = new Scanner(System.in); //이 라인을 넣어야 함 
         // Create a Scanner object
         // System.out.println("Enter username");

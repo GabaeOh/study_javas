@@ -1,5 +1,5 @@
 // import java.util.Scanner; 
-public class pollsWithoutMethod {
+public class PollsWithoutMethod {
     public static void main(String[] args) {
         // @SuppressWarnings("resource") // 사용된 Scanner 위에서 추가 해야지 clode가 됨
         // System.out.println("이름");
@@ -19,9 +19,9 @@ public class pollsWithoutMethod {
         for(int first = 0; first <survey.length; first = first+2 ){
                 System.out.println(survey[first][0]);
                 for(int second=0; second < survey[1].length; second++){
-                    System.out.println( survey[second+1][]);
+                    System.out.println( survey[3][1]);
                 }
-                System.out.println(survey[][]);
+                // System.out.println(survey[][]);
         }
     }
 }
