@@ -25,10 +25,10 @@ public class Ifs {
          }
 
 
-         int time = 15;
-         if ( time < 12) {
+         int time1 = 15;
+         if ( time1 < 12) {
             System.out.println("오전입니다.") ;
-         } else if ( time < 18) {
+         } else if ( time1 < 18) {
             System.out.println("오후입니다.") ;
          } else {
             System.out.println("밤입니다.") ;
