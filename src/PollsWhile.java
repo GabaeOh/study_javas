@@ -19,7 +19,7 @@ public class PollsWhile {
                 System.out.println("------설문통계------");
                 // break;
             } else if (answer.equals("Exit ") ||  answer.equals("E") ) {
-                System.out.println("------설문종료-----"); // while에서 빠지면?
+                System.out.println("------설문종료-----"); 
                 break;
             }
             // break;
