@@ -1,3 +1,4 @@
+package cases;
 import java.util.Scanner;
 public class Subjet1 {
     public static void main(String[] args) {

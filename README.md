@@ -9,6 +9,6 @@
  | While문 | LoopWhile.java | 조건문  | while(){}; |
  | for문 | LoopFor.java | 조건문  |for(){}; |
  | 데이터타입 | [TypeCasting.java](https://github.com/GabaeOh/study_javas/blob/master/src/TypeCasting.java) | 데이터타입을 변경  |  |
- 
+ | Break | [Breaks.java](./src/Breaks.java) | 루프 탈출 문법  | |
  ## JAVA 연습문제
  

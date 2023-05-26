@@ -1,4 +1,4 @@
-// Scanner 외부에서 Terminal에서 값을 받을 수 있게 하는 기능
+// Scanner 외부에서 Terminal에서 값을 받을 수 있게 하는 기능, 입력하는 기능
 import java.util.Scanner; // class 밖에서 선언
 public class Scanners {
     public static void main(String[] args) {
