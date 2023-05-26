@@ -5,7 +5,9 @@
  | 제목 | 작성소스 | 설명 | 비고 |
  | --- | --- | --- | --- |
  | Print | Main.java | 화면에 문자 출력 |  |
- | if문 | ifs.java | 조건문  |if(){}; |
+ | if문 | [Ifs.java](./src/Ifs.java) | 조건에 따라 분기  |if(){}; |
+ | While문 | LoopWhile.java | 조건문  | while(){}; |
+ | for문 | LoopFor.java | 조건문  |for(){}; |
  | 데이터타입 | [TypeCasting.java](https://github.com/GabaeOh/study_javas/blob/master/src/TypeCasting.java) | 데이터타입을 변경  |  |
  
  ## JAVA 연습문제
