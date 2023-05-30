@@ -7,8 +7,10 @@ public class MethodBasics {
     public int F(int x) 
     {
         int result =  x + 1;
-        return result;  // return의 데이터 타입을 무조건 맞춰줘야 함  
-
+        return result;  // return의 데이터 타입을 무조건 맞춰줘야 함
+    }  
+    public int F(int y) 
+    {
         int result2 =  y + 1;
         return result2;  // return의 데이터 타입을 무조건 맞춰줘야 함 
     }
@@ -23,7 +25,7 @@ public class MethodBasics {
         // 관리하기 편하고, 유지보수 및 효율성을 위하여 
         //y = F(x);
         y = methodBasics.F(x); //해당하는 class의 function에 들어가 있어요 
-
+        
         y = y + 1; //변수에 + 1
         y = methodBasics.F(y);
     } catch (Exception e) {
