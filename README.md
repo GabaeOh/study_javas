@@ -10,6 +10,9 @@
  | for문 | LoopFor.java | 조건문  |for(){}; |
  | 데이터타입 | [TypeCasting.java](https://github.com/GabaeOh/study_javas/blob/master/src/TypeCasting.java) | 데이터타입을 변경  |  |
  | Break | [Breaks.java](./src/Breaks.java) | 루프 탈출 문법  | |
+ | Method | [MethodBasics.java](./src/MethodBasics.java) | Method | |
+ | Methods | [Methods.java](./src/Methods.java) | Method 사용 예시 |  |
+ | MethodIfs | [MethodIfs.java](./src/MethodIfs.java) | Method 사용 예시 |  |
  ## JAVA 연습문제
  | 제목 | 작성소스 | 설명 | 비고 |
  | --- | --- | --- | --- |
