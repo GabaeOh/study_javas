@@ -4,7 +4,7 @@ public class Methods {
     // //body
     // }
     // 두 값을 빼는 기능 
-    public static int minus(int first, int second){
+    public int minus(int first, int second){
         int result = 0;
         try {
             result = first - second;           
@@ -15,7 +15,7 @@ public class Methods {
     }
 
     // 두 값을 더하는 기능
-    public static int add(int first, int second){ // add는 두 값을 합치는 거니깐 받을 값 first, second 값 2개
+    public int add(int first, int second){ // add는 두 값을 합치는 거니깐 받을 값 first, second 값 2개
         int result = 0; // result값을 try영역이 아닌 같은 영역에서 선언
         try {
             result = first + second;
@@ -34,13 +34,13 @@ public class Methods {
             int second = 1;
             Methods methods = new Methods();
 
-            first = Methods.add(first, second);
-            second = Methods.add(first, second);
-            first = Methods.add(first, second);
-            second = Methods.add(first, second);
-            first = Methods.add(first, second);
-            first = Methods.add(first, second);
-            first = Methods.minus(first, second);
+            first = methods.add(first, second);
+            second = methods.add(first, second);
+            first = methods.add(first, second);
+            second = methods.add(first, second);
+            first = methods.add(first, second);
+            first = methods.add(first, second);
+            first = methods.minus(first, second);
             
             int result = first; 
 
