@@ -30,7 +30,7 @@ public class MethodsSwitchs {
         try {
 
             int day = 4; // 1 ~ 4 가능
-            String str = ""; // 변수화하여 마지막 출력할때 해당 변수 사용
+            // String str = ""; // 변수화하여 마지막 출력할때 해당 변수 사용
             
             MethodsSwitchs methodsSwitchs= new MethodsSwitchs(); // 인스터스화 
             String returnResult = methodsSwitchs.today(day); // 받는 값을 returnResult로 변수 선언
