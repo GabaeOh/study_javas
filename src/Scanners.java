@@ -2,7 +2,6 @@
 import java.util.Scanner; // class 밖에서 선언
 public class Scanners {
     public static void main(String[] args) {
-        // @SuppressWarnings("resource") // 사용된 Scanner 위에서 추가 해야지 close가 됨
         Scanner myObj = new Scanner(System.in); //이 라인을 넣어야 함 
         // Create a Scanner object
         // System.out.println("Enter username");
@@ -15,7 +14,7 @@ public class Scanners {
         first = myObj.nextInt(); //숫자를 입력할거면 nextInt를 넣어야함
         second = myObj.nextInt();
         System.out.println(first+","+second); // 글자를 통짜로 만들어주는 기능 +","+
+        myObj.close(); // 사용된 Scanner의 자원을 반납해줘야 함 / close해 줘야 함 
         // return 0;
     }
-
 }

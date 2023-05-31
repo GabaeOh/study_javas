@@ -30,6 +30,7 @@ public class Subjet1 {
 
 
         System.out.println();
+        myObj.close();
         // return 0;
     }
 }
