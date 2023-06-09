@@ -22,3 +22,5 @@
  | --- | --- | --- | --- |
  | WhileWithScanners | [WhileWithScanners](./src/WhileWithScanners.java) | 스캐너를 사용하여 while문 예제 | |
  | CashFor | [CashFor.java](./src/CashFor.java) | 금액을 합산하는 | |
+ | MedicalCheckupWithoutDB | [MedicalCheckupWithoutDB.java](./src/MedicalCheckupWithoutDB.java) | 테이블을 출력하기 | |   
+
