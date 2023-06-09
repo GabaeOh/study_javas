@@ -94,3 +94,22 @@ public class MedicalCheckupWithoutDB {
         }
     }
 }
+
+
+// 랜덤하게 출력되는 .set라고 가정한다면, 
+//  기준행만 먼저 출력 하고 나머지는 랜덤하게 출력되는 것!
+
+// 첫 번째 행 출력
+// HashMap<String, String> firstRow = medicalList.get(0);
+// System.out.println(firstRow.get("이름") + " " + firstRow.get("성별") + " " + firstRow.get("나이") + " " + firstRow.get("키, 체중")
+//         + " " + firstRow.get("혈압, 혈당") + " " + firstRow.get("검진결과") + " " + firstRow.get("재검진항목") + " "
+//         + firstRow.get("유지방안"));
+
+// 랜덤하게 나머지 행 출력
+// Random random = new Random();
+// for (int i = 1; i < medicalList.size(); i++) {
+//     int index = random.nextInt(medicalList.size() - 1) + 1;
+//     HashMap<String, String> row = medicalList.get(index);
+//     System.out.println(row.get("이름") + " " + row.get("성별") + " " + row.get("나이") + " " + row.get("키, 체중") + " "
+//             + row.get("혈압, 혈당") + " " + row.get("검진결과") + " " + row.get("재검진항목") + " " + row.get("유지방안"));
+// }
