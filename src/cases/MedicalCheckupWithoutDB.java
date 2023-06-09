@@ -12,7 +12,19 @@ public class MedicalCheckupWithoutDB {
             ArrayList<HashMap> medicalList = new ArrayList<HashMap>();  
             HashMap<String, String> medicalhash = new HashMap<String, String>();
 
+            // 기준 행 
+            medicalhash.put("이름", "이름");
+            medicalhash.put("성별", "성별");
+            medicalhash.put("나이", "나이");
+            medicalhash.put("키, 체중", "키, 체중");
+            medicalhash.put("혈압, 혈당", "혈압, 혈당");
+            medicalhash.put("검진결과", "검진결과");
+            medicalhash.put("재검진항목", "재검진항목");
+            medicalhash.put("유지방안", "유지방안 ");
+            medicalList.add(medicalhash);
+
             // 1행 
+            medicalhash = new HashMap<String, String>();
             medicalhash.put("이름", "홍길동");
             medicalhash.put("성별", "남");
             medicalhash.put("나이", "30");
