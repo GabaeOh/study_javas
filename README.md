@@ -13,6 +13,10 @@
  | Method | [MethodBasics.java](./src/MethodBasics.java) | Method | |
  | Methods | [Methods.java](./src/Methods.java) | Method 사용 예시 |  |
  | MethodIfs | [MethodIfs.java](./src/MethodIfs.java) | Method 사용 예시 |  |
+ | StringClasses | [StringClasses.java](./src/StringClasses.java) | String class의 예시들 |  |
+ | ClassArrayList | [ClassArrayList.java](./src/ClassArrayList.java) | ClassArrayList 예시들 |  |
+ | ClassHashMaps | [ClassHashMaps.java](./src/ClassHashMaps.java) | ClassHashMaps 사용 예시 |  |
+ | LoopForEachs | [LoopForEachs.java](./src/LoopForEachs.java) | LoopForEachs를 사용하여 hashmap 값 출력 |  |
  ## JAVA 연습문제
  | 제목 | 작성소스 | 설명 | 비고 |
  | --- | --- | --- | --- |
