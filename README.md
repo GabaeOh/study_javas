@@ -17,6 +17,9 @@
  | ClassArrayList | [ClassArrayList.java](./src/ClassArrayList.java) | ClassArrayList 예시들 |  |
  | ClassHashMaps | [ClassHashMaps.java](./src/ClassHashMaps.java) | ClassHashMaps 사용 예시 |  |
  | LoopForEachs | [LoopForEachs.java](./src/LoopForEachs.java) | LoopForEachs를 사용하여 hashmap 값 출력 |  |
+ | ConnectDB | [ConnectDB.java](./src/ConnectDB.java) | DB를 자바에 연결하기 |  |
+ | ConnectDBWithMethod | [ConnectDBWithMethod.java](./src/ConnectDBWithMethod.java) | 입력과 출력 담기 |  |
+
  ## JAVA 연습문제
  | 제목 | 작성소스 | 설명 | 비고 |
  | --- | --- | --- | --- |

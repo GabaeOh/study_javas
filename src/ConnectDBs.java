@@ -50,12 +50,12 @@ public class ConnectDBs {
             // 변수화 시키는게 좋음 
             String companyId = "CAR-01";
             String company = "AUDI";
-            query = "INSERT INTO factorys " +
+            query = "INSERT INTO factorys " +  // 중복 에러 발생으로 IGNORE 사용
                     "(COMPANY_ID, COMPANY) " +
-                    "VALUES " + 
+                    "VALUE " + 
                     "('"+companyId+"', '"+company+"') " ;//''를 꼭 넣어줘야 함 
-                    
-            int count = statement.executeUpdate(query); //결과값이 없기때문에 resultset으로 넘길필요하 없어 update를 사용, workbench에서 update된거 확인 
+
+            int count = statement.executeUpdate(query); //결과값이 없기때문에 resultset으로 넘길필요 없어 update를 사용, workbench에서 update된거 확인 
 
             
             //data 수정
@@ -65,7 +65,6 @@ public class ConnectDBs {
             WHERE COMPANY_ID = 'CAR-01';
              */
 
-            companyId = "CAR-01";
             company = "패러리";
             query = "UPDATE factorys " +
                     "SET COMPANY = '"+company+"' " +
@@ -79,7 +78,6 @@ public class ConnectDBs {
             WHERE COMPANY_ID = 'CAR-01';
              */
 
-            companyId = "CAR-01";
             query = "DELETE FROM factorys " +
                     "WHERE COMPANY_ID = '"+companyId+"' ";
 
