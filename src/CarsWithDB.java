@@ -51,7 +51,7 @@ public class CarsWithDB {
                     Statement statement2 = connection.createStatement(); // edit창 2개 띄웠으니깐, statement도 2개
                     ResultSet resultSet2; //결과 값도 한개 더 받아야되니깐
                     String query2; 
-                    HashMap<String, String> carNumberMap = new HashMap<>();
+                    ""
 
                     while (resultSet.next()) {
                         System.out.print( number + ". " +
