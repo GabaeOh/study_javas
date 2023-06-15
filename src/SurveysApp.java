@@ -8,7 +8,7 @@ public class SurveysApp {
         try {
             // - MySQL workbench 실행 : JDBC
             // - User/password와 접속 IP:port 접속
-            String url = "jdbc:mysql://127.0.0.1:3306/db_cars"; // 마지막은 db이름으로 "db_cars"
+            String url = "jdbc:mysql://127.0.0.1:3306/db_survey"; // 마지막은 db이름으로 "db_cars"
             // localhost도 가능하나 IP주소를 넣는게 보다 좋음
 
             // jdbc : java DB connetion , 'https://www.naver.com/'의 구조와 유사 / 원격으로 db_cars에 연결하는 구조를 나열
