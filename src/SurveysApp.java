@@ -25,13 +25,13 @@ public class SurveysApp {
            
             System.out.println("---- 통계 ----");
             // -- 총 설문자 4명 
-            String query2 = " FROM (\n" + //
+            String query = " FROM (\n" + //
                     "\t\tSELECT RESPONDENTS_ID, count(*) CNT\n" + //
                     "\t\tFROM statistics\n" + //
                     "\t\tGROUP BY RESPONDENTS_ID\n" + //
                     "        ) AS T_STATIC\n" + //
                     ";"; 
-            ResultSet resultSet = statement.executeQuery(query2); 
+            ResultSet resultSet = statement.executeQuery(query); 
             while(resultSet.next()){ 
                 System.out.println(" -- 총 설문자 : " + resultSet.getString("CNT") );
             }
