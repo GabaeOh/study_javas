@@ -40,7 +40,7 @@ public class SurveysApp {
             int number = 1; // 이름 앞에 순번을 넣어주기 위함
             Scanner scanner = new Scanner(System.in);
 
-            HashMap<String, String > respondentsInfo = new HashMap<String, String>();
+            HashMap<String, String > respondentsInfo = new HashMap<>();
         
             while (resultSet.next()) {
                 System.out.print(number + "." + resultSet.getString("respondents") + ", ");
@@ -49,7 +49,7 @@ public class SurveysApp {
             }
             System.out.println();
             //설문자 선택
-            System.out.println("설문자 선택 : ");
+            System.out.print("설문자 선택 : ");
             String respondent = scanner.nextLine();
             // -- 설문 시작
             // -- -------- 참조 : poll contents example -------------
@@ -68,7 +68,7 @@ public class SurveysApp {
             while (resultSet.next()) {
                 System.out.println(number + "." + resultSet.getString("questions"));
                
-
+                //답항 출력
                 query = "SELECT T_CHO.CHOICE_ID, T_CHO.CHOICE\n" +
                         "FROM question_choice AS T_QUES\n" +
 	                    "INNER JOIN choice AS T_CHO\n" +
@@ -76,7 +76,7 @@ public class SurveysApp {
                         "AND QUESTIONS_ID = 'Q2'\n";
                 ResultSet resultSet_second= statement_second.executeQuery(query);
                 int number_second = 1; // 이름 앞에 순번을 넣어주기 위함
-                HashMap<String, String> choiceInfor = new HashMap<String, String>();
+                HashMap<String, String> choiceInfor = new HashMap<>();
                 while (resultSet_second.next()) {
                     System.out.print(number_second + "." + resultSet_second.getString("CHOICE") + ", ");
                     choiceInfor.put(String.valueOf(number_second), resultSet_second.getString("CHOICE_ID")); 
@@ -85,7 +85,7 @@ public class SurveysApp {
                 resultSet_second.close();
                 System.out.println();
                 //INSERT문 작성 -> 답변을 한 문항에 대한답변을 다 받고(출력까지되어서) INSERT
-                System.out.println("답항 선택 : ");
+                System.out.print("답항 선택 : ");
                 String choice_key = scanner.nextLine(); // 1, 2, 3으로 답변 
                 query = "INSERT INTO statistics\n" + //
                         "(STATISTICS_ID, RESPONDENTS_ID, QUESTIONS_ID , CHOICE_ID)\n" + //
