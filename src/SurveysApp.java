@@ -2,7 +2,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Scanner;
 
+import com.mysql.cj.x.protobuf.MysqlxPrepare.Execute;
+
+import commons.Commons;
 import surveys.Statistics;
 
 public class SurveysApp {
@@ -33,12 +38,19 @@ public class SurveysApp {
                     "FROM respondents ;";
             ResultSet resultSet = statement.executeQuery(query);
             int number = 1; // 이름 앞에 순번을 넣어주기 위함
+            Scanner scanner = new Scanner(System.in);
+
+            HashMap<String, String > respondentsInfo = new HashMap<String, String>();
+        
             while (resultSet.next()) {
                 System.out.print(number + "." + resultSet.getString("respondents") + ", ");
+                respondentsInfo.put(String.valueOf(number), resultSet.getString("respondents_ID")); // 번호와 설문자pk를 이어주는 해쉬맵
                 number++;
             }
             System.out.println();
-
+            //설문자 선택
+            System.out.println("설문자 선택 : ");
+            String respondent = scanner.nextLine();
             // -- 설문 시작
             // -- -------- 참조 : poll contents example -------------
             // -- 1. 교수는 수업 전 강의 목표를 명확히 제시하였습니까?
@@ -52,6 +64,7 @@ public class SurveysApp {
             resultSet = statement.executeQuery(query);
             number = 1; // 이름 앞에 순번을 넣어주기 위함
             Statement statement_second = connection.createStatement(); // 답항을 받기 위한 
+            Commons commons = new Commons();
             while (resultSet.next()) {
                 System.out.println(number + "." + resultSet.getString("questions"));
                
@@ -63,12 +76,23 @@ public class SurveysApp {
                         "AND QUESTIONS_ID = 'Q2'\n";
                 ResultSet resultSet_second= statement_second.executeQuery(query);
                 int number_second = 1; // 이름 앞에 순번을 넣어주기 위함
+                HashMap<String, String> choiceInfor = new HashMap<String, String>();
                 while (resultSet_second.next()) {
                     System.out.print(number_second + "." + resultSet_second.getString("CHOICE") + ", ");
-                    number_second = number_second+ 1 ; //질문에 대한 순번
+                    choiceInfor.put(String.valueOf(number_second), resultSet_second.getString("CHOICE_ID")); 
+                    number_second++ ; //답변에 대한 순번
                 }
+                resultSet_second.close();
                 System.out.println();
-                 number++; //질문에 대한 순번
+                //INSERT문 작성 -> 답변을 한 문항에 대한답변을 다 받고(출력까지되어서) INSERT
+                System.out.println("답항 선택 : ");
+                String choice_key = scanner.nextLine(); // 1, 2, 3으로 답변 
+                query = "INSERT INTO statistics\n" + //
+                        "(STATISTICS_ID, RESPONDENTS_ID, QUESTIONS_ID , CHOICE_ID)\n" + //
+                        "VALUES\n" + //
+                        "('"+commons.generateUUID()+"', '"+ respondentsInfo.get(respondent) +"', '"+resultSet.getString("QUESTIONS_ID")+"', '"+choiceInfor.get(choice_key)+"');";
+                int result =  statement_second.executeUpdate(query);
+                number++; //질문에 대한 순번
             }
             System.out.println();
             // 통계 - 총 설문자 표시

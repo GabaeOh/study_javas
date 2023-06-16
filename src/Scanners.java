@@ -17,4 +17,8 @@ public class Scanners {
         myObj.close(); // 사용된 Scanner의 자원을 반납해줘야 함 / close해 줘야 함 
         // return 0;
     }
+
+    public String nextLine() {
+        return null;
+    }
 }
