@@ -8,11 +8,7 @@ import vehicles.Car;
 import vehicles.MountainBike;
 import vehicles.RoadCycle;
 import vehicles.Scooter;
-<<<<<<< HEAD
 import vehicles.Vehicles;
-=======
-import vehicles.Vehicle;
->>>>>>> d8b873f1de4e8342cccd1771bb4334b0c560f9bc
 
 public class Inheritances {
     public static void main(String[] args) {
@@ -32,7 +28,6 @@ public class Inheritances {
             // 상속화 실습
             // RoadCycle roadCycle = new RoadCycle("삼천리 이동환_가배 자전거", "skyblue", 12000);
             // System.out.println(roadCycle.toString());
-<<<<<<< HEAD
 
             //구현하고 호출하기 
             // Car car = new Car();
@@ -47,8 +42,6 @@ public class Inheritances {
             // 추상화 확인
             Scooter scooter = new Scooter();
             System.out.println();
-=======
->>>>>>> d8b873f1de4e8342cccd1771bb4334b0c560f9bc
 
             // Car car = new Car();
             // int speed = car.speedUp(1);
