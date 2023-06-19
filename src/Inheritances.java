@@ -15,7 +15,7 @@ public class Inheritances {
             
             //상속화 활용
             //MountainBike mountainBike = new MountainBike();
-            MountainBike mountainBike = new MountainBike(6200, "yellow", 5);
+            //MountainBike mountainBike = new MountainBike(6200, "yellow", 5);
 
             RoadCycle roadCycle = new RoadCycle("이동환 자전거", "WHITE", 10000);
             System.out.println(roadCycle.toString());
