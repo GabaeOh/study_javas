@@ -17,7 +17,7 @@ public class Inheritances {
             //MountainBike mountainBike = new MountainBike();
             MountainBike mountainBike = new MountainBike(6200, "yellow", 5);
 
-            RoadCycle roadCycle = new RoadCycle("이동환 자전거");
+            RoadCycle roadCycle = new RoadCycle("이동환 자전거", "WHITE", 10000);
             System.out.println(roadCycle.toString());
         } catch (Exception e) {
             System.out.println(e.getMessage());
