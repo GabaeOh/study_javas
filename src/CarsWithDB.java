@@ -5,7 +5,6 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import javax.lang.model.util.ElementScanner14;
 
 import commons.Commons;
 
@@ -49,15 +48,9 @@ public class CarsWithDB {
                     int number = 1; // 추가적으로 부여하는 순번
 
                     Statement statement2 = connection.createStatement(); // edit창 2개 띄웠으니깐, statement도 2개
-<<<<<<< HEAD
                     ResultSet resultSet2; // 결과 값도 한개 더 받아야되니깐
                     String query2;
                     HashMap<String, String> carNumberMap = new HashMap<>();
-=======
-                    ResultSet resultSet2; //결과 값도 한개 더 받아야되니깐
-                    String query2; 
-                    ""
->>>>>>> cc16993ed3595c635740ad8ebbe747a9d2829a3a
 
                     while (resultSet.next()) {
                         System.out.print(number + ". " +
