@@ -1,7 +1,14 @@
+import java.util.HashMap;
+import java.util.Map;
+
 import inheritances.ObjectInheritances;
 import vehicles.Bicycle;
+import vehicles.Bike;
+import vehicles.Car;
 import vehicles.MountainBike;
 import vehicles.RoadCycle;
+import vehicles.Scooter;
+import vehicles.Vehicle;
 
 public class Inheritances {
     public static void main(String[] args) {
@@ -19,9 +26,22 @@ public class Inheritances {
             //System.out.println();
 
             // 상속화 실습
-            RoadCycle roadCycle = new RoadCycle("삼천리 이동환_가배 자전거", "skyblue", 12000);
-            System.out.println(roadCycle.toString());
+            // RoadCycle roadCycle = new RoadCycle("삼천리 이동환_가배 자전거", "skyblue", 12000);
+            // System.out.println(roadCycle.toString());
 
+            // Car car = new Car();
+            // int speed = car.speedUp(1);
+            // speed = car.speedDown(2);
+            // System.out.println(speed);
+
+            // Vehicle bike = new Bike();
+            // Vehicle car_second = new Car();
+            // System.out.println();
+
+            // Map<String, Object>hashMap = new HashMap <String, Object>();
+            
+            Scooter scooter = new Scooter();
+            System.out.println();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
