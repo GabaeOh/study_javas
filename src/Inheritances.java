@@ -19,7 +19,7 @@ public class Inheritances {
             //System.out.println();
 
             // 상속화 실습
-            RoadCycle roadCycle = new RoadCycle(12000, "skyblue", "삼천리 이동환_가배 자전거");
+            RoadCycle roadCycle = new RoadCycle("삼천리 이동환_가배 자전거", "skyblue", 12000);
             System.out.println(roadCycle.toString());
 
         } catch (Exception e) {
