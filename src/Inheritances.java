@@ -16,9 +16,12 @@ public class Inheritances {
             //상속화 활용
             //MountainBike mountainBike = new MountainBike();
             //MountainBike mountainBike = new MountainBike(6200, "yellow", 5);
+            //System.out.println();
 
-            RoadCycle roadCycle = new RoadCycle("이동환 자전거", "WHITE", 10000);
+            // 상속화 실습
+            RoadCycle roadCycle = new RoadCycle("삼천리 이동환_가배 자전거", "skyblue", 12000);
             System.out.println(roadCycle.toString());
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
