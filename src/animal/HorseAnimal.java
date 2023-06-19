@@ -6,7 +6,8 @@ public class HorseAnimal extends HorseAnimalExtend{
         return str;
     }
     public String getSpeed() {
-        this.speed += this.increament;
+        HorseAnimalExtend horseAnimalExtend = new HorseAnimalExtend();
+        this.speed = horseAnimalExtend.speed(2);
         String spd = "speed : " + this.speed + "km";
         return spd;
     }
