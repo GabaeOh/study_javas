@@ -8,7 +8,7 @@ import vehicles.Car;
 import vehicles.MountainBike;
 import vehicles.RoadCycle;
 import vehicles.Scooter;
-import vehicles.Vehicle;
+import vehicles.Vehicles;
 
 public class Inheritances {
     public static void main(String[] args) {
@@ -28,6 +28,20 @@ public class Inheritances {
             // 상속화 실습
             // RoadCycle roadCycle = new RoadCycle("삼천리 이동환_가배 자전거", "skyblue", 12000);
             // System.out.println(roadCycle.toString());
+
+            //구현하고 호출하기 
+            // Car car = new Car();
+            // int speed = car.speedUp(1);
+            // speed = car.speedDown(2);
+
+            // //bike 호출하기 
+            // Vehicles bike = new Bike(); //interface(구현관계)는 해당 방법으로 선언하고 인스턴스화 
+            // System.out.println();
+
+            // Map<String, String> hashMap = new HashMap<>(); //해쉬맵 구현 방법 
+            // 추상화 확인
+            Scooter scooter = new Scooter();
+            System.out.println();
 
             // Car car = new Car();
             // int speed = car.speedUp(1);

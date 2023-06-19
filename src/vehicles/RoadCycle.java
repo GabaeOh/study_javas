@@ -8,7 +8,7 @@ public class RoadCycle extends Bicycle{
         this.price = price;
     }
     public String toString() {
-        String str = "제품명 : " + this.p_name + ", price : " + this.price + ", color : " + this.color;
+        String str = "제품명 : " + this.p_name + ", price : " + this.price + ", color : " + this.color ;
         return str;
     }
 }
